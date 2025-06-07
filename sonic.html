@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>FNF Sonic Exe unblocked play free online</title>
+  <meta name="description" content="Looking for Friday Night Funkin Sonic Exe unblocked game? Play FNF Sonic Exe mod on FNFmodsonline.github.io.">
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="icon" href="favicon.png" type="image/png" />
+  <meta property=og:type content="website">
+  <meta property="og:url" content="https://fnfmodsonline.github.io/sonic.html" />
+  <meta property=og:site_name content="FNF Mods Online">
+  <meta property=og:title content="FNF Sonic Exe unblocked play free online" />
+  <meta property=og:description content="Looking for Friday Night Funkin Sonic Exe unblocked game? Play FNF Sonic Exe mod on FNFmodsonline.github.io." />
+</head>
+<body>
+  <div class="burger-menu" id="burger">☰</div>
+  <nav class="sidebar" id="sidebar">
+    <h2>FNF Mods unblocked</h2>
+    <a href="/">Friday Night Funkin unblocked</a>
+    <a href="week-7.html">Week 7</a>
+    <a href="week-8.html">Week 8</a>
+    <a href="baddies-nightmare.html">Baddies Nightmare</a>
+    <a href="bob.html">Bob</a>
+    <a href="darkness-takeover.html">Darkness Takeover</a>
+    <a href="garcello.html">Garcello</a>
+    <a href="huggy-wuggy.html">Huggy Wuggy</a>
+    <a href="imposter-v4.html">Imposter v4</a>
+    <a href="indie-cross.html">Indie Cross</a>
+    <a href="mario-madness-v2.html">Mario Madness v2</a>
+    <a href="pibby-apocalypse.html">Pibby Apocalypse</a>
+    <a href="pico-school.html">Pico School</a>
+    <a href="silly-billy.html">Silly Billy</a>
+  </nav>
+
+  <div class="main">
+    <header>
+      <h1>FNF Sonic Exe mod</h1>
+      <div class="buttons-top">
+        <button id="play-now-btn" class="btn turquoise" onclick="loadVideo()">Play Now</button>
+        <button id="fullscreen-btn" class="btn turquoise" onclick="toggleFullScreen()">Full Screen</button>
+      </div>
+    </header>
+
+    <div id="video-container">
+      <button id="play-button" class="btn play-button" onclick="loadVideo()">Click Here To Play</button>
+      <div class="video-embed">
+        <iframe
+          id="video-iframe"
+          src=""
+          frameborder="0"
+          allowfullscreen
+          allow="autoplay; fullscreen"
+        ></iframe>
+      </div>
+    </div>
+
+    <section class="mod-description">
+      <h2>Sonic.exe Friday Night Funkin game</h2>
+      <p>
+Friday Night Funkin': Sonic.exe is one of the most iconic and terrifying horror mods in the FNF universe. Based on the infamous Sonic creepypasta, this mod throws Boyfriend into a corrupted, haunted version of Sonic's world, where friendly blue speed is replaced by glitchy chaos, blood-red eyes, and pure nightmare fuel. It's a dark twist on a beloved classic — and a rhythm battle like no other.
+</p><br/>
+
+<p>
+In the Sonic.exe mod, Boyfriend must face off against evil forms like Sonic.exe, Lord X, Majin Sonic, and other disturbing versions of characters from the Sonic franchise. Each opponent brings a different brand of horror, with haunting vocals, jump-scare moments, and aggressive gameplay mechanics that push your reflexes and nerves to the limit.
+</p><br/>
+
+<p>
+The soundtrack features legendary tracks like "Too Slow," "You Can’t Run," "Execution," and more. Each song is filled with glitch effects, reversed audio, demonic laughter, and unexpected visual tricks that make the experience feel intense and immersive. The backgrounds are corrupted versions of Green Hill Zone, dark voids, and twisted dimensions that perfectly match the sonic horror aesthetic.
+</p><br/>
+
+<p>
+FNF: Sonic.exe has grown into a massive modding universe with remixes, reanimated versions, and even full fan-made sequels like Sonic.exe 2.0 and 3.0. Its community is one of the largest in the FNF scene, and the mod is known for its rich lore, terrifying design, and unforgettable rhythm battles.
+</p><br/>
+
+<p>
+🎮 Play Friday Night Funkin' Sonic.exe online and test your skills in one of the most disturbing and legendary FNF horror mods ever made. Can you escape the glitch... or will you be caught in the EXE?
+</p>
+    </section>
+
+    <footer>
+      Play for free online FNF vs Sonic Friday Night Funkin mod. Also, check out the other unblocked FNF mods presented on the site.
+    </footer>
+  </div>
+
+  <script>
+    function loadVideo() {
+      const iframe = document.getElementById('video-iframe');
+      iframe.src = 'https://mod.fnfhub.net/6608/';
+      document.getElementById('play-button').style.display = 'none';
+      document.querySelector('.video-embed').style.display = 'block';
+    }
+
+    function toggleFullScreen() {
+      const elem = document.getElementById('video-container');
+      if (!document.fullscreenElement) {
+        elem.requestFullscreen().catch((err) => {
+          alert(`Error attempting to enable full-screen mode: ${err.message} (${err.name})`);
+        });
+      } else {
+        document.exitFullscreen();
+      }
+    }
+
+    const burger = document.getElementById('burger');
+    const sidebar = document.getElementById('sidebar');
+
+    burger.addEventListener('click', () => {
+      sidebar.classList.toggle('visible');
+    });
+
+    document.addEventListener('click', (e) => {
+      if (!sidebar.contains(e.target) && !burger.contains(e.target)) {
+        sidebar.classList.remove('visible');
+      }
+    });
+  </script>
+</body>
+</html>

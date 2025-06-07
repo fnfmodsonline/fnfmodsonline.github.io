@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>FNF Huggy Wuggy unblocked play free online</title>
+  <meta name="description" content="Looking for Friday Night Funkin Huggy Wuggy unblocked game? Play FNF Huggy Wuggy mod on FNFmodsonline.github.io.">
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="icon" href="favicon.png" type="image/png" />
+  <meta property=og:type content="website">
+  <meta property="og:url" content="https://fnfmodsonline.github.io/huggy-wuggy.html" />
+  <meta property=og:site_name content="FNF Mods Online">
+  <meta property=og:title content="FNF Huggy Wuggy unblocked play free online" />
+  <meta property=og:description content="Looking for Friday Night Funkin Huggy Wuggy unblocked game? Play FNF Huggy Wuggy mod on FNFmodsonline.github.io." />
+</head>
+<body>
+  <div class="burger-menu" id="burger">☰</div>
+  <nav class="sidebar" id="sidebar">
+    <h2>FNF Mods unblocked</h2>
+    <a href="/">Friday Night Funkin unblocked</a>
+    <a href="week-7.html">Week 7</a>
+    <a href="week-8.html">Week 8</a>
+    <a href="baddies-nightmare.html">Baddies Nightmare</a>
+    <a href="bob.html">Bob</a>
+    <a href="darkness-takeover.html">Darkness Takeover</a>
+    <a href="garcello.html">Garcello</a>
+    <a href="imposter-v4.html">Imposter v4</a>
+    <a href="indie-cross.html">Indie Cross</a>
+    <a href="mario-madness-v2.html">Mario Madness v2</a>
+    <a href="pibby-apocalypse.html">Pibby Apocalypse</a>
+    <a href="pico-school.html">Pico School</a>
+    <a href="silly-billy.html">Silly Billy</a>
+    <a href="sonic.html">Sonic Exe</a>
+  </nav>
+
+  <div class="main">
+    <header>
+      <h1>FNF Huggy Wuggy mod</h1>
+      <div class="buttons-top">
+        <button id="play-now-btn" class="btn turquoise" onclick="loadVideo()">Play Now</button>
+        <button id="fullscreen-btn" class="btn turquoise" onclick="toggleFullScreen()">Full Screen</button>
+      </div>
+    </header>
+
+    <div id="video-container">
+      <button id="play-button" class="btn play-button" onclick="loadVideo()">Click Here To Play</button>
+      <div class="video-embed">
+        <iframe
+          id="video-iframe"
+          src=""
+          frameborder="0"
+          allowfullscreen
+          allow="autoplay; fullscreen"
+        ></iframe>
+      </div>
+    </div>
+
+    <section class="mod-description">
+      <h2>Friday Night Funkin Huggy Wuggy</h2>
+      <p>
+Friday Night Funkin': Huggy Wuggy is a thrilling and spooky crossover mod that brings the creepy mascot from the horror game "Poppy Playtime" into the FNF universe. This mod blends the intense rhythm mechanics of FNF with the eerie atmosphere and jump-scare energy of Huggy Wuggy, creating a unique and heart-pounding music battle experience.
+</p><br/>
+
+<p>
+In this mod, Boyfriend faces off against Huggy Wuggy inside the abandoned toy factory setting. With dark visuals, flickering lights, and unsettling animations, the stage sets the tone for a high-stakes showdown. Huggy Wuggy’s long limbs, disturbing smile, and sudden changes in behavior keep the battle feeling unpredictable and intense.
+</p><br/>
+
+<p>
+The soundtrack features original horror-themed tracks that build tension and push your timing skills to the limit. The music mixes creepy lullaby tones with aggressive beats, mimicking the psychological pressure of being chased or stalked — just like in Poppy Playtime. Each song escalates in difficulty, mirroring Huggy’s growing aggression and chaos.
+</p><br/>
+
+<p>
+FNF Huggy Wuggy has become a standout among horror-based FNF mods, thanks to its cinematic design, high-quality music, and unforgettable visual effects. Whether you’re a fan of scary games or just want to challenge your rhythm skills in a new setting, this mod delivers both fear and fun.
+</p><br/>
+
+<p>
+🎮 Play Friday Night Funkin' Huggy Wuggy mod online and step into the toy factory for a musical battle of survival. Keep your cool — Huggy’s watching.
+</p>
+    </section>
+
+    <footer>
+      Play for free online FNF vs Huggy Wuggy Friday Night Funkin mod. Also, check out the other unblocked FNF mods presented on the site.
+    </footer>
+  </div>
+
+  <script>
+    function loadVideo() {
+      const iframe = document.getElementById('video-iframe');
+      iframe.src = 'https://mod.fnfhub.net/24928/';
+      document.getElementById('play-button').style.display = 'none';
+      document.querySelector('.video-embed').style.display = 'block';
+    }
+
+    function toggleFullScreen() {
+      const elem = document.getElementById('video-container');
+      if (!document.fullscreenElement) {
+        elem.requestFullscreen().catch((err) => {
+          alert(`Error attempting to enable full-screen mode: ${err.message} (${err.name})`);
+        });
+      } else {
+        document.exitFullscreen();
+      }
+    }
+
+    const burger = document.getElementById('burger');
+    const sidebar = document.getElementById('sidebar');
+
+    burger.addEventListener('click', () => {
+      sidebar.classList.toggle('visible');
+    });
+
+    document.addEventListener('click', (e) => {
+      if (!sidebar.contains(e.target) && !burger.contains(e.target)) {
+        sidebar.classList.remove('visible');
+      }
+    });
+  </script>
+</body>
+</html>

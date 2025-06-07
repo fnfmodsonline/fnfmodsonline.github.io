@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>FNF Pico unblocked play free online</title>
+  <meta name="description" content="Looking for Friday Night Funkin Pico unblocked game? Play FNF Pico School mod on FNFmodsonline.github.io.">
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="icon" href="favicon.png" type="image/png" />
+  <meta property=og:type content="website">
+  <meta property="og:url" content="https://fnfmodsonline.github.io/pico-school.html" />
+  <meta property=og:site_name content="FNF Mods Online">
+  <meta property=og:title content="FNF Pico unblocked play free online" />
+  <meta property=og:description content="Looking for Friday Night Funkin Pico unblocked game? Play FNF Pico School mod on FNFmodsonline.github.io." />
+</head>
+<body>
+  <div class="burger-menu" id="burger">☰</div>
+  <nav class="sidebar" id="sidebar">
+    <h2>FNF Mods unblocked</h2>
+    <a href="/">Friday Night Funkin unblocked</a>
+    <a href="week-7.html">Week 7</a>
+    <a href="week-8.html">Week 8</a>
+    <a href="baddies-nightmare.html">Baddies Nightmare</a>
+    <a href="bob.html">Bob</a>
+    <a href="darkness-takeover.html">Darkness Takeover</a>
+    <a href="garcello.html">Garcello</a>
+    <a href="huggy-wuggy.html">Huggy Wuggy</a>
+    <a href="imposter-v4.html">Imposter v4</a>
+    <a href="indie-cross.html">Indie Cross</a>
+    <a href="mario-madness-v2.html">Mario Madness v2</a>
+    <a href="pibby-apocalypse.html">Pibby Apocalypse</a>
+    <a href="silly-billy.html">Silly Billy</a>
+    <a href="sonic.html">Sonic Exe</a>
+  </nav>
+
+  <div class="main">
+    <header>
+      <h1>FNF Pico mod</h1>
+      <div class="buttons-top">
+        <button id="play-now-btn" class="btn turquoise" onclick="loadVideo()">Play Now</button>
+        <button id="fullscreen-btn" class="btn turquoise" onclick="toggleFullScreen()">Full Screen</button>
+      </div>
+    </header>
+
+    <div id="video-container">
+      <button id="play-button" class="btn play-button" onclick="loadVideo()">Click Here To Play</button>
+      <div class="video-embed">
+        <iframe
+          id="video-iframe"
+          src=""
+          frameborder="0"
+          allowfullscreen
+          allow="autoplay; fullscreen"
+        ></iframe>
+      </div>
+    </div>
+
+    <section class="mod-description">
+      <h2>Friday Night Funkin Pico School game</h2>
+      <p>
+Friday Night Funkin': Pico’s School is a dark and nostalgic FNF mod that brings back the iconic flash game "Pico’s School" in the form of a rhythm-based showdown. Inspired by the classic Newgrounds title created by Tom Fulp, this mod places Boyfriend in a high-stakes musical battle against characters from a school gone totally off the rails.
+</p><br/>
+
+<p>
+In FNF: Pico’s School, you’ll face off against several characters from the original game, including Pico himself, Cassandra, and other hostile classmates. The mod mixes gritty visuals, gunfire effects, and intense beats that capture the chaos and rebellion of the original Pico’s School story — now reimagined through music.
+</p><br/>
+
+<p>
+The soundtrack blends fast-paced rock, punk, and glitchy audio elements that match the atmosphere of a school overtaken by violence and mayhem. Cutscenes and animations pay tribute to the flash era while introducing modern FNF gameplay mechanics, creating a bridge between generations of online games.
+</p><br/>
+
+<p>
+This mod is especially popular among longtime Newgrounds fans who remember Pico’s School as one of the most infamous Flash games of the early 2000s. The FNF version reintroduces that world with new style, updated art, and powerful musical storytelling.
+</p><br/>
+
+<p>
+🎮 Play FNF: Pico’s School Mod online and step into a chaotic classroom where battles are fought with rhythm and attitude. Can you survive the school day?
+</p>
+    </section>
+
+    <footer>
+      Play for free online FNF vs Pico Friday Night Funkin mod. Also, check out the other unblocked FNF mods presented on the site.
+    </footer>
+  </div>
+
+  <script>
+    function loadVideo() {
+      const iframe = document.getElementById('video-iframe');
+      iframe.src = 'https://mod.fnfhub.net/24938/';
+      document.getElementById('play-button').style.display = 'none';
+      document.querySelector('.video-embed').style.display = 'block';
+    }
+
+    function toggleFullScreen() {
+      const elem = document.getElementById('video-container');
+      if (!document.fullscreenElement) {
+        elem.requestFullscreen().catch((err) => {
+          alert(`Error attempting to enable full-screen mode: ${err.message} (${err.name})`);
+        });
+      } else {
+        document.exitFullscreen();
+      }
+    }
+
+    const burger = document.getElementById('burger');
+    const sidebar = document.getElementById('sidebar');
+
+    burger.addEventListener('click', () => {
+      sidebar.classList.toggle('visible');
+    });
+
+    document.addEventListener('click', (e) => {
+      if (!sidebar.contains(e.target) && !burger.contains(e.target)) {
+        sidebar.classList.remove('visible');
+      }
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>FNF Mario Madness v2 unblocked play free online</title>
+  <meta name="description" content="Looking for Friday Night Funkin Mario Madness v2 unblocked game? Play FNF Mario Madness v2 mod on FNFmodsonline.github.io.">
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="icon" href="favicon.png" type="image/png" />
+  <meta property=og:type content="website">
+  <meta property="og:url" content="https://fnfmodsonline.github.io/mario-madness-v2.html" />
+  <meta property=og:site_name content="FNF Mods Online">
+  <meta property=og:title content="FNF Mario Madness v2 unblocked play free online" />
+  <meta property=og:description content="Looking for Friday Night Funkin Mario Madness v2 unblocked game? Play FNF Mario Madness v2 mod on FNFmodsonline.github.io." />
+</head>
+<body>
+  <div class="burger-menu" id="burger">☰</div>
+  <nav class="sidebar" id="sidebar">
+    <h2>FNF Mods unblocked</h2>
+    <a href="/">Friday Night Funkin unblocked</a>
+    <a href="week-7.html">Week 7</a>
+    <a href="week-8.html">Week 8</a>
+    <a href="baddies-nightmare.html">Baddies Nightmare</a>
+    <a href="bob.html">Bob</a>
+    <a href="darkness-takeover.html">Darkness Takeover</a>
+    <a href="garcello.html">Garcello</a>
+    <a href="huggy-wuggy.html">Huggy Wuggy</a>
+    <a href="imposter-v4.html">Imposter v4</a>
+    <a href="indie-cross.html">Indie Cross</a>
+    <a href="pibby-apocalypse.html">Pibby Apocalypse</a>
+    <a href="pico-school.html">Pico School</a>
+    <a href="silly-billy.html">Silly Billy</a>
+    <a href="sonic.html">Sonic Exe</a>
+  </nav>
+
+  <div class="main">
+    <header>
+      <h1>FNF Mario Madness v2 mod</h1>
+      <div class="buttons-top">
+        <button id="play-now-btn" class="btn turquoise" onclick="loadVideo()">Play Now</button>
+        <button id="fullscreen-btn" class="btn turquoise" onclick="toggleFullScreen()">Full Screen</button>
+      </div>
+    </header>
+
+    <div id="video-container">
+      <button id="play-button" class="btn play-button" onclick="loadVideo()">Click Here To Play</button>
+      <div class="video-embed">
+        <iframe
+          id="video-iframe"
+          src=""
+          frameborder="0"
+          allowfullscreen
+          allow="autoplay; fullscreen"
+        ></iframe>
+      </div>
+    </div>
+
+    <section class="mod-description">
+      <h2>Friday Night Funkin Mario Madness 2</h2>
+      <p>
+Friday Night Funkin': Mario Madness V2 is a dark, chaotic, and nostalgia-twisting FNF mod that transforms the familiar world of Super Mario into a nightmare-fueled rhythm showdown. This mod takes inspiration from classic Mario games, fan-made creepypasta stories, and glitch horror to create one of the most creative and disturbing crossovers in the FNF community.
+</p><br/>
+
+<p>
+In Mario Madness V2, Boyfriend faces off against corrupted and cursed versions of Mario characters, including EXE-style Mario, Luigi, Peach, Wario, and even more obscure fan creations. These aren’t your friendly Mushroom Kingdom residents — they’ve been consumed by madness, glitches, and an unstoppable musical rage.
+</p><br/>
+
+<p>
+The mod includes multiple weeks packed with intense original songs, each reflecting the psychological breakdown of the once-wholesome Mario universe. From distorted 8-bit tracks and demonic vocals to jump-scare mechanics and rapidly changing gameplay, the experience keeps you on edge throughout.
+</p><br/>
+
+<p>
+Visually, the mod blends pixel art, VHS horror aesthetics, and retro platformer backgrounds with a sinister twist. The animations are smooth and terrifying, giving life to haunted versions of characters you thought you knew. Cutscenes and dialogue add story depth, referencing fan-made games and viral content like Mario.EXE and I Hate You Luigi.
+</p><br/>
+
+<p>
+🎮 Play FNF Mario Madness V2 online and dive into a corrupted kingdom where rhythm is your only weapon. Will you make it out of this 1-Up nightmare, or become another glitch in the code?
+</p>
+    </section>
+
+    <footer>
+      Play for free online FNF vs Mario Friday Night Funkin mod. Also, check out the other unblocked FNF mods presented on the site.
+    </footer>
+  </div>
+
+  <script>
+    function loadVideo() {
+      const iframe = document.getElementById('video-iframe');
+      iframe.src = 'https://mod.fnfhub.net/27062/';
+      document.getElementById('play-button').style.display = 'none';
+      document.querySelector('.video-embed').style.display = 'block';
+    }
+
+    function toggleFullScreen() {
+      const elem = document.getElementById('video-container');
+      if (!document.fullscreenElement) {
+        elem.requestFullscreen().catch((err) => {
+          alert(`Error attempting to enable full-screen mode: ${err.message} (${err.name})`);
+        });
+      } else {
+        document.exitFullscreen();
+      }
+    }
+
+    const burger = document.getElementById('burger');
+    const sidebar = document.getElementById('sidebar');
+
+    burger.addEventListener('click', () => {
+      sidebar.classList.toggle('visible');
+    });
+
+    document.addEventListener('click', (e) => {
+      if (!sidebar.contains(e.target) && !burger.contains(e.target)) {
+        sidebar.classList.remove('visible');
+      }
+    });
+  </script>
+</body>
+</html>

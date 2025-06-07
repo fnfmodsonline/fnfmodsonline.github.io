@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>FNF Silly Billy unblocked play free online</title>
+  <meta name="description" content="Looking for Friday Night Funkin Silly Billy unblocked game? Play FNF Silly Billy mod on FNFmodsonline.github.io.">
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="icon" href="favicon.png" type="image/png" />
+  <meta property=og:type content="website">
+  <meta property="og:url" content="https://fnfmodsonline.github.io/silly-billy.html" />
+  <meta property=og:site_name content="FNF Mods Online">
+  <meta property=og:title content="FNF Silly Billy unblocked play free online" />
+  <meta property=og:description content="Looking for Friday Night Funkin Silly Billy unblocked game? Play FNF Silly Billy mod on FNFmodsonline.github.io." />
+</head>
+<body>
+  <div class="burger-menu" id="burger">☰</div>
+  <nav class="sidebar" id="sidebar">
+    <h2>FNF Mods unblocked</h2>
+    <a href="/">Friday Night Funkin unblocked</a>
+    <a href="week-7.html">Week 7</a>
+    <a href="week-8.html">Week 8</a>
+    <a href="baddies-nightmare.html">Baddies Nightmare</a>
+    <a href="bob.html">Bob</a>
+    <a href="darkness-takeover.html">Darkness Takeover</a>
+    <a href="garcello.html">Garcello</a>
+    <a href="huggy-wuggy.html">Huggy Wuggy</a>
+    <a href="imposter-v4.html">Imposter v4</a>
+    <a href="indie-cross.html">Indie Cross</a>
+    <a href="mario-madness-v2.html">Mario Madness v2</a>
+    <a href="pibby-apocalypse.html">Pibby Apocalypse</a>
+    <a href="pico-school.html">Pico School</a>
+    <a href="sonic.html">Sonic Exe</a>
+  </nav>
+
+  <div class="main">
+    <header>
+      <h1>FNF Silly Billy mod</h1>
+      <div class="buttons-top">
+        <button id="play-now-btn" class="btn turquoise" onclick="loadVideo()">Play Now</button>
+        <button id="fullscreen-btn" class="btn turquoise" onclick="toggleFullScreen()">Full Screen</button>
+      </div>
+    </header>
+
+    <div id="video-container">
+      <button id="play-button" class="btn play-button" onclick="loadVideo()">Click Here To Play</button>
+      <div class="video-embed">
+        <iframe
+          id="video-iframe"
+          src=""
+          frameborder="0"
+          allowfullscreen
+          allow="autoplay; fullscreen"
+        ></iframe>
+      </div>
+    </div>
+
+    <section class="mod-description">
+      <h2>Silly Billy Friday Night Funkin game</h2>
+      <p>
+Friday Night Funkin': Silly Billy is a chaotic, meme-filled FNF mod that doesn't take itself seriously — and that’s exactly what makes it so entertaining. Bursting with absurd humor, internet references, and unpredictable music charts, the Silly Billy mod has become a fan-favorite among those who love bizarre and over-the-top rhythm challenges.
+</p><br/>
+
+<p>
+In this mod, Boyfriend takes on Silly Billy — a strange, glitchy, and completely unhinged character who seems to have come straight out of meme culture. His design is cartoonish and expressive, often changing mid-battle, adding to the madness. Every second of gameplay feels unexpected, making it one of the most unique FNF experiences to date.
+</p><br/>
+
+<p>
+The soundtrack of Silly Billy is as wild as the mod itself. With songs that switch tempo, distort audio, and feature chaotic sound effects, players must stay on their toes and adapt quickly. The arrows may glitch, reverse, or fly at unpredictable speeds, delivering a real test of reflexes — and a whole lot of laughs.
+</p><br/>
+
+<p>
+What makes the FNF Silly Billy mod shine is its creativity and commitment to fun. It's a break from the serious tone of many other mods and offers a refreshing, goofy experience filled with surprises. Fans of mods like Bob or Trollge will feel right at home in Silly Billy's absurd world.
+</p><br/>
+
+<p>
+🎮 Play Friday Night Funkin' Silly Billy online and dive into one of the craziest rhythm battles ever created. Can you out-sing a glitchy meme monster?
+</p>
+    </section>
+
+    <footer>
+      Play for free online FNF vs Silly Billy Friday Night Funkin mod. Also, check out the other unblocked FNF mods presented on the site.
+    </footer>
+  </div>
+
+  <script>
+    function loadVideo() {
+      const iframe = document.getElementById('video-iframe');
+      iframe.src = 'https://mod.fnfhub.net/26937/';
+      document.getElementById('play-button').style.display = 'none';
+      document.querySelector('.video-embed').style.display = 'block';
+    }
+
+    function toggleFullScreen() {
+      const elem = document.getElementById('video-container');
+      if (!document.fullscreenElement) {
+        elem.requestFullscreen().catch((err) => {
+          alert(`Error attempting to enable full-screen mode: ${err.message} (${err.name})`);
+        });
+      } else {
+        document.exitFullscreen();
+      }
+    }
+
+    const burger = document.getElementById('burger');
+    const sidebar = document.getElementById('sidebar');
+
+    burger.addEventListener('click', () => {
+      sidebar.classList.toggle('visible');
+    });
+
+    document.addEventListener('click', (e) => {
+      if (!sidebar.contains(e.target) && !burger.contains(e.target)) {
+        sidebar.classList.remove('visible');
+      }
+    });
+  </script>
+</body>
+</html>

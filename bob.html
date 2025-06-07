@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>FNF Bob unblocked play free online</title>
+  <meta name="description" content="Looking for Friday Night Funkin Bob unblocked game? Play FNF Bob mod on FNFmodsonline.github.io.">
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="icon" href="favicon.png" type="image/png" />
+  <meta property=og:type content="website">
+  <meta property="og:url" content="https://fnfmodsonline.github.io/bob.html" />
+  <meta property=og:site_name content="FNF Mods Online">
+  <meta property=og:title content="FNF Bob unblocked play free online" />
+  <meta property=og:description content="Looking for Friday Night Funkin Bob unblocked game? Play FNF Bob mod on FNFmodsonline.github.io." />
+</head>
+<body>
+  <div class="burger-menu" id="burger">☰</div>
+  <nav class="sidebar" id="sidebar">
+    <h2>FNF Mods unblocked</h2>
+    <a href="/">Friday Night Funkin unblocked</a>
+    <a href="week-7.html">Week 7</a>
+    <a href="week-8.html">Week 8</a>
+    <a href="baddies-nightmare.html">Baddies Nightmare</a>
+    <a href="darkness-takeover.html">Darkness Takeover</a>
+    <a href="garcello.html">Garcello</a>
+    <a href="huggy-wuggy.html">Huggy Wuggy</a>
+    <a href="imposter-v4.html">Imposter v4</a>
+    <a href="indie-cross.html">Indie Cross</a>
+    <a href="mario-madness-v2.html">Mario Madness v2</a>
+    <a href="pibby-apocalypse.html">Pibby Apocalypse</a>
+    <a href="pico-school.html">Pico School</a>
+    <a href="silly-billy.html">Silly Billy</a>
+    <a href="sonic.html">Sonic Exe</a>
+  </nav>
+
+  <div class="main">
+    <header>
+      <h1>FNF Bob mod</h1>
+      <div class="buttons-top">
+        <button id="play-now-btn" class="btn turquoise" onclick="loadVideo()">Play Now</button>
+        <button id="fullscreen-btn" class="btn turquoise" onclick="toggleFullScreen()">Full Screen</button>
+      </div>
+    </header>
+
+    <div id="video-container">
+      <button id="play-button" class="btn play-button" onclick="loadVideo()">Click Here To Play</button>
+      <div class="video-embed">
+        <iframe
+          id="video-iframe"
+          src=""
+          frameborder="0"
+          allowfullscreen
+          allow="autoplay; fullscreen"
+        ></iframe>
+      </div>
+    </div>
+
+    <section class="mod-description">
+      <h2>Friday Night Funkin Bob game</h2>
+      <p>
+Friday Night Funkin' Bob is one of the most chaotic and unpredictable mods in the entire FNF universe. Known for its wild humor, troll energy, and fourth-wall-breaking moments, the Bob mod takes the familiar rhythm battle formula and turns it upside down. What starts as a seemingly innocent battle quickly spirals into glitchy madness, packed with jumpscares, meme culture, and absurd difficulty spikes.
+</p><br/>
+
+<p>
+In this mod, Boyfriend faces off against Bob — a crudely drawn, smiley-faced character who becomes increasingly unstable as the songs progress. What makes FNF Bob stand out is not just the unique art style, but the way it plays with expectations. The songs start out normal, but soon feature broken arrows, visual distortions, and unexpected jumps in pace and complexity.
+</p><br/>
+
+<p>
+FNF Bob includes tracks like “Sunshine,” “Withered,” and “Run,” each designed to confuse and challenge players while keeping them laughing (and maybe a little terrified). The mod has become a fan-favorite for its originality, unpredictability, and its ability to keep even expert players on their toes.
+</p><br/>
+
+<p>
+Whether you love hard mods, meme mods, or just want to experience something completely different, the Bob mod is a must-play. It captures the wild spirit of the FNF community and turns it into a unique, chaotic adventure.
+</p><br/>
+
+<p>
+🎮 Play Friday Night Funkin' Bob online and see if you can survive the madness. But be warned — Bob plays dirty.
+</p>
+    </section>
+
+    <footer>
+      Play for free online FNF vs Bob Friday Night Funkin mod. Also, check out the other unblocked FNF mods presented on the site.
+    </footer>
+  </div>
+
+  <script>
+    function loadVideo() {
+      const iframe = document.getElementById('video-iframe');
+      iframe.src = 'https://mod.fnfhub.net/24959/';
+      document.getElementById('play-button').style.display = 'none';
+      document.querySelector('.video-embed').style.display = 'block';
+    }
+
+    function toggleFullScreen() {
+      const elem = document.getElementById('video-container');
+      if (!document.fullscreenElement) {
+        elem.requestFullscreen().catch((err) => {
+          alert(`Error attempting to enable full-screen mode: ${err.message} (${err.name})`);
+        });
+      } else {
+        document.exitFullscreen();
+      }
+    }
+
+    const burger = document.getElementById('burger');
+    const sidebar = document.getElementById('sidebar');
+
+    burger.addEventListener('click', () => {
+      sidebar.classList.toggle('visible');
+    });
+
+    document.addEventListener('click', (e) => {
+      if (!sidebar.contains(e.target) && !burger.contains(e.target)) {
+        sidebar.classList.remove('visible');
+      }
+    });
+  </script>
+</body>
+</html>

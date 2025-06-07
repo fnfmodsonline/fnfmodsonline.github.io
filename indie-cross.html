@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>FNF Indie Cross unblocked play free online</title>
+  <meta name="description" content="Looking for Friday Night Funkin Indie Cross unblocked game? Play FNF Indie Cross mod on FNFmodsonline.github.io.">
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="icon" href="favicon.png" type="image/png" />
+  <meta property=og:type content="website">
+  <meta property="og:url" content="https://fnfmodsonline.github.io/indie-cross.html" />
+  <meta property=og:site_name content="FNF Mods Online">
+  <meta property=og:title content="FNF Indie Cross unblocked play free online" />
+  <meta property=og:description content="Looking for Friday Night Funkin Indie Cross unblocked game? Play FNF Indie Cross mod on FNFmodsonline.github.io." />
+</head>
+<body>
+  <div class="burger-menu" id="burger">☰</div>
+  <nav class="sidebar" id="sidebar">
+    <h2>FNF Mods unblocked</h2>
+    <a href="/">Friday Night Funkin unblocked</a>
+    <a href="week-7.html">Week 7</a>
+    <a href="week-8.html">Week 8</a>
+    <a href="baddies-nightmare.html">Baddies Nightmare</a>
+    <a href="bob.html">Bob</a>
+    <a href="darkness-takeover.html">Darkness Takeover</a>
+    <a href="garcello.html">Garcello</a>
+    <a href="huggy-wuggy.html">Huggy Wuggy</a>
+    <a href="imposter-v4.html">Imposter v4</a>
+    <a href="mario-madness-v2.html">Mario Madness v2</a>
+    <a href="pibby-apocalypse.html">Pibby Apocalypse</a>
+    <a href="pico-school.html">Pico School</a>
+    <a href="silly-billy.html">Silly Billy</a>
+    <a href="sonic.html">Sonic Exe</a>
+  </nav>
+
+  <div class="main">
+    <header>
+      <h1>FNF Indie Cross mod</h1>
+      <div class="buttons-top">
+        <button id="play-now-btn" class="btn turquoise" onclick="loadVideo()">Play Now</button>
+        <button id="fullscreen-btn" class="btn turquoise" onclick="toggleFullScreen()">Full Screen</button>
+      </div>
+    </header>
+
+    <div id="video-container">
+      <button id="play-button" class="btn play-button" onclick="loadVideo()">Click Here To Play</button>
+      <div class="video-embed">
+        <iframe
+          id="video-iframe"
+          src=""
+          frameborder="0"
+          allowfullscreen
+          allow="autoplay; fullscreen"
+        ></iframe>
+      </div>
+    </div>
+
+    <section class="mod-description">
+      <h2>Indie Cross Friday Night Funkin game</h2>
+      <p>
+Friday Night Funkin': Indie Cross is one of the most creative and visually stunning FNF mods, combining multiple indie game universes into a single epic crossover. This mod features characters from beloved indie titles such as <strong>Cuphead</strong>, <strong>Undertale</strong>, and <strong>Bendy and the Ink Machine</strong>, each bringing their own unique style, music, and battle mechanics into the FNF world.
+</p><br/>
+
+<p>
+In the Indie Cross mod, Boyfriend goes head-to-head in a series of musical duels against iconic indie characters like Cuphead, Sans, and Bendy. Each battle is designed with custom animations, voice acting, and background environments that reflect the source game’s tone — from Cuphead’s hand-drawn 1930s cartoon aesthetic to the dark, inky horror of Bendy’s world.
+</p><br/>
+
+<p>
+The soundtrack is one of the mod’s biggest highlights, featuring original tracks that capture the essence of each character’s personality and game universe. You'll find jazzy chaos, 8-bit intensity, and sinister horror tones all packed into a rhythm-based format. Special mechanics like dodging attacks, timed movements, and visual glitches make the gameplay feel fresh and dynamic.
+</p><br/>
+
+<p>
+FNF Indie Cross stands out not just for its crossover appeal, but for its professional polish and fan service. The mod offers multiple weeks, secret challenges, and even a story-driven experience that feels like more than just a music mod — it’s a celebration of indie game culture.
+</p><br/>
+
+<p>
+🎮 Play Friday Night Funkin' Indie Cross online and step into the worlds of your favorite indie legends. Are your rhythm skills strong enough to survive this ultimate crossover?
+</p>
+    </section>
+
+    <footer>
+      Play for free online Indie Cross Friday Night Funkin mod. Also, check out the other unblocked FNF mods presented on the site.
+    </footer>
+  </div>
+
+  <script>
+    function loadVideo() {
+      const iframe = document.getElementById('video-iframe');
+      iframe.src = 'https://mod.fnfhub.net/24879/';
+      document.getElementById('play-button').style.display = 'none';
+      document.querySelector('.video-embed').style.display = 'block';
+    }
+
+    function toggleFullScreen() {
+      const elem = document.getElementById('video-container');
+      if (!document.fullscreenElement) {
+        elem.requestFullscreen().catch((err) => {
+          alert(`Error attempting to enable full-screen mode: ${err.message} (${err.name})`);
+        });
+      } else {
+        document.exitFullscreen();
+      }
+    }
+
+    const burger = document.getElementById('burger');
+    const sidebar = document.getElementById('sidebar');
+
+    burger.addEventListener('click', () => {
+      sidebar.classList.toggle('visible');
+    });
+
+    document.addEventListener('click', (e) => {
+      if (!sidebar.contains(e.target) && !burger.contains(e.target)) {
+        sidebar.classList.remove('visible');
+      }
+    });
+  </script>
+</body>
+</html>

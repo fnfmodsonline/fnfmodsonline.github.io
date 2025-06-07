@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>FNF Pibby Apocalypse unblocked play free online</title>
+  <meta name="description" content="Looking for Friday Night Funkin Pibby Apocalypse unblocked game? Play FNF Pibby Apocalypse mod on FNFmodsonline.github.io.">
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="icon" href="favicon.png" type="image/png" />
+  <meta property=og:type content="website">
+  <meta property="og:url" content="https://fnfmodsonline.github.io/pibby-apocalypse.html" />
+  <meta property=og:site_name content="FNF Mods Online">
+  <meta property=og:title content="FNF Pibby Apocalypse unblocked play free online" />
+  <meta property=og:description content="Looking for Friday Night Funkin Pibby Apocalypse unblocked game? Play FNF Pibby Apocalypse mod on FNFmodsonline.github.io." />
+</head>
+<body>
+  <div class="burger-menu" id="burger">☰</div>
+  <nav class="sidebar" id="sidebar">
+    <h2>FNF Mods unblocked</h2>
+    <a href="/">Friday Night Funkin unblocked</a>
+    <a href="week-7.html">Week 7</a>
+    <a href="week-8.html">Week 8</a>
+    <a href="baddies-nightmare.html">Baddies Nightmare</a>
+    <a href="bob.html">Bob</a>
+    <a href="darkness-takeover.html">Darkness Takeover</a>
+    <a href="garcello.html">Garcello</a>
+    <a href="huggy-wuggy.html">Huggy Wuggy</a>
+    <a href="imposter-v4.html">Imposter v4</a>
+    <a href="indie-cross.html">Indie Cross</a>
+    <a href="mario-madness-v2.html">Mario Madness v2</a>
+    <a href="pico-school.html">Pico School</a>
+    <a href="silly-billy.html">Silly Billy</a>
+    <a href="sonic.html">Sonic Exe</a>
+  </nav>
+
+  <div class="main">
+    <header>
+      <h1>FNF Pibby Apocalypse mod</h1>
+      <div class="buttons-top">
+        <button id="play-now-btn" class="btn turquoise" onclick="loadVideo()">Play Now</button>
+        <button id="fullscreen-btn" class="btn turquoise" onclick="toggleFullScreen()">Full Screen</button>
+      </div>
+    </header>
+
+    <div id="video-container">
+      <button id="play-button" class="btn play-button" onclick="loadVideo()">Click Here To Play</button>
+      <div class="video-embed">
+        <iframe
+          id="video-iframe"
+          src=""
+          frameborder="0"
+          allowfullscreen
+          allow="autoplay; fullscreen"
+        ></iframe>
+      </div>
+    </div>
+
+    <section class="mod-description">
+      <h2>Friday Night Funkin Pibby Apocalypse</h2>
+      <p>
+Friday Night Funkin': Pibby Apocalypse is a glitch-fueled crossover mod that merges the corrupted world of Learning with Pibby with the rhythm battles of FNF. Inspired by the viral Cartoon Network concept where familiar cartoon characters are taken over by a mysterious glitch, this mod delivers a dark, intense, and visually striking experience that feels like a battle for reality itself.
+</p><br/>
+
+<p>
+In FNF: Pibby Apocalypse, Boyfriend must survive rhythm duels against corrupted versions of beloved animated characters from series like Adventure Time, The Amazing World of Gumball, Steven Universe, and more. Each battle shows how far the infection has spread, with twisted visuals, broken music, and terrifying animations that push FNF’s horror elements to the limit.
+</p><br/>
+
+<p>
+The soundtrack features glitchy remixes and original tracks designed to sound broken, chaotic, and full of tension. Backgrounds flicker, sprites stutter, and the corrupted characters scream distorted vocals, making each song feel like a desperate struggle to fight back against digital decay.
+</p><br/>
+
+<p>
+Pibby Apocalypse stands out for its high-quality production, creative use of glitch effects, and emotional depth. It’s more than a simple crossover — it’s a what-if scenario where everything you know is falling apart, and rhythm is the only way to hold the line.
+</p><br/>
+
+<p>
+🎮 Play FNF: Pibby Apocalypse online and fight back against the corruption. Can you keep up with the beat before the glitch consumes everything?
+</p>
+    </section>
+
+    <footer>
+      Play for free online FNF vs Pibby Friday Night Funkin mod. Also, check out the other unblocked FNF mods presented on the site.
+    </footer>
+  </div>
+
+  <script>
+    function loadVideo() {
+      const iframe = document.getElementById('video-iframe');
+      iframe.src = 'https://mod.fnfhub.net/24786/';
+      document.getElementById('play-button').style.display = 'none';
+      document.querySelector('.video-embed').style.display = 'block';
+    }
+
+    function toggleFullScreen() {
+      const elem = document.getElementById('video-container');
+      if (!document.fullscreenElement) {
+        elem.requestFullscreen().catch((err) => {
+          alert(`Error attempting to enable full-screen mode: ${err.message} (${err.name})`);
+        });
+      } else {
+        document.exitFullscreen();
+      }
+    }
+
+    const burger = document.getElementById('burger');
+    const sidebar = document.getElementById('sidebar');
+
+    burger.addEventListener('click', () => {
+      sidebar.classList.toggle('visible');
+    });
+
+    document.addEventListener('click', (e) => {
+      if (!sidebar.contains(e.target) && !burger.contains(e.target)) {
+        sidebar.classList.remove('visible');
+      }
+    });
+  </script>
+</body>
+</html>
