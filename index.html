@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Friday Night Funkin online - FNF unblocked mods on FNFmodsonline.github.io</title>
+  <meta name="description" content="Friday Night Funkin - play for free best rhytm music game online from your Chromebook or any other device. Catch the falling notes and win the FNF competition.">
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="icon" href="favicon.png" type="image/png" />
+  <meta property=og:type content="website">
+  <meta property="og:url" content="https://fnfmodsonline.github.io" />
+  <meta property=og:site_name content="FNF Mods Online">
+  <meta property=og:title content="Friday Night Funkin online - FNF unblocked mods on FNFmodsonline.github.io" />
+  <meta property=og:description content="Friday Night Funkin - play for free best rhytm music game online from your Chromebook or any other device. Catch the falling notes and win the FNF competition." />
+</head>
+<body>
+  <div class="burger-menu" id="burger">☰</div>
+  <nav class="sidebar" id="sidebar">
+    <h2>FNF Mods unblocked</h2>
+    <a href="week-7.html">Week 7</a>
+    <a href="week-8.html">Week 8</a>
+    <a href="baddies-nightmare.html">Baddies Nightmare</a>
+    <a href="bob.html">Bob</a>
+    <a href="darkness-takeover.html">Darkness Takeover</a>
+    <a href="garcello.html">Garcello</a>
+    <a href="huggy-wuggy.html">Huggy Wuggy</a>
+    <a href="imposter-v4.html">Imposter v4</a>
+    <a href="indie-cross.html">Indie Cross</a>
+    <a href="mario-madness-v2.html">Mario Madness v2</a>
+    <a href="pibby-apocalypse.html">Pibby Apocalypse</a>
+    <a href="pico-school.html">Pico School</a>
+    <a href="silly-billy.html">Silly Billy</a>
+    <a href="sonic.html">Sonic Exe</a>
+  </nav>
+
+  <div class="main">
+    <header>
+      <h1>Friday Night Funkin</h1>
+      <div class="buttons-top">
+        <button id="play-now-btn" class="btn turquoise" onclick="loadVideo()">Play Now</button>
+        <button id="fullscreen-btn" class="btn turquoise" onclick="toggleFullScreen()">Full Screen</button>
+      </div>
+    </header>
+
+    <div id="video-container">
+      <button id="play-button" class="btn play-button" onclick="loadVideo()">Click Here To Play</button>
+      <div class="video-embed">
+        <iframe
+          id="video-iframe"
+          src=""
+          frameborder="0"
+          allowfullscreen
+          allow="autoplay; fullscreen"
+        ></iframe>
+      </div>
+    </div>
+
+    <section class="mod-description">
+      <h2>Friday Night Funkin / FNF Game</h2>
+      <p>
+Friday Night Funkin' (FNF) is a fast-paced rhythm game that has taken the internet by storm. Originally created by a team of indie developers, including ninjamuffin99, PhantomArcade, evilsk8r, and Kawai Sprite, FNF combines nostalgic pixel art, catchy beats, and addictive gameplay into a music battle experience that fans around the world can’t get enough of.
+</p><br/>
+
+<p>
+In FNF, you play as Boyfriend, a confident young singer trying to impress his Girlfriend by defeating a variety of eccentric opponents in musical duels. Each “week” introduces a new set of characters, from Daddy Dearest and Mommy Mearest to fan-favorites like Pico, Senpai, and Tankman. The songs are catchy, the difficulty ramps up quickly, and every battle feels like a concert showdown.
+</p><br/>
+
+<p>
+What sets Friday Night Funkin' apart is its blend of rhythm mechanics with storytelling, humor, and vibrant visuals. Arrows fall in time with the music, and your goal is to hit the right notes to keep the beat and outperform your opponent. With a mix of original tracks and an ever-growing modding community, FNF has become a creative playground for artists, musicians, and coders alike.
+</p><br/>
+
+<p>
+The game is fully open-source, which has led to the rise of thousands of fan-made mods, expanding the FNF universe with new characters, songs, and challenges. From horror crossovers to cartoon mashups and meme-filled chaos, the world of FNF keeps growing with no signs of stopping.
+</p><br/>
+
+<p>
+🎮 Play Friday Night Funkin’ online and dive into the ultimate rhythm game sensation. Are you ready to face the beat and win your Girlfriend’s heart?
+</p>
+    </section>
+
+    <footer>
+      Play FNF for free online. Also, check out the other unblocked Friday Night Funkin mods presented on the site.
+    </footer>
+  </div>
+
+  <script>
+    function loadVideo() {
+      const iframe = document.getElementById('video-iframe');
+      iframe.src = 'https://mod.fnfhub.net/26860/';
+      document.getElementById('play-button').style.display = 'none';
+      document.querySelector('.video-embed').style.display = 'block';
+    }
+
+    function toggleFullScreen() {
+      const elem = document.getElementById('video-container');
+      if (!document.fullscreenElement) {
+        elem.requestFullscreen().catch((err) => {
+          alert(`Error attempting to enable full-screen mode: ${err.message} (${err.name})`);
+        });
+      } else {
+        document.exitFullscreen();
+      }
+    }
+
+    const burger = document.getElementById('burger');
+    const sidebar = document.getElementById('sidebar');
+
+    burger.addEventListener('click', () => {
+      sidebar.classList.toggle('visible');
+    });
+
+    document.addEventListener('click', (e) => {
+      if (!sidebar.contains(e.target) && !burger.contains(e.target)) {
+        sidebar.classList.remove('visible');
+      }
+    });
+  </script>
+</body>
+</html>
