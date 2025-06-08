@@ -141,25 +141,23 @@ header h1 {
 
 #video-container {
   width: 100%;
-  max-width: 960px;
-  aspect-ratio: 16 / 9;
-  background: #222;
-  border-radius: 16px;
-  overflow: hidden;
+  max-width: 900px;
+  height: auto;
+  aspect-ratio: 18 / 10;
+  margin: 20px auto;
+  background-size: cover;
+  background-position: center;
   position: relative;
-  box-shadow: 0 0 40px #00bcd4;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-top: 20px;
+  border-radius: 12px;
+  overflow: hidden;
 }
 
 .play-button {
   position: absolute;
   inset: 0;
   font-family: inherit;
-  background: #00bcd4;
-  color: #000;
+  background: rgba(0, 0, 0, 0.3); /* прозрачный полупрозрачный фон */
+  color: #fff;
   font-size: 2rem;
   font-weight: 700;
   border-radius: 16px;
@@ -170,12 +168,12 @@ header h1 {
   align-items: center;
   transition: background-color 0.25s ease;
   z-index: 2;
-  box-shadow: 0 0 20px #00bcd4;
+  box-shadow: none;
+  /* backdrop-filter: blur(4px); <-- удалено */
 }
 
 .play-button:hover {
-  background: #00e5ff;
-  box-shadow: 0 0 30px #00e5ff;
+  background: rgba(0, 0, 0, 0.6);
 }
 
 .video-embed {
