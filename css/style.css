@@ -72,7 +72,8 @@ body::before {
   background: #2a2a2a;
   border-radius: 6px;
   transition: 0.2s;
-  display: block;
+  display: flex;
+  align-items: center;
   user-select: none;
 }
 
@@ -86,8 +87,8 @@ body::before {
 }
 
 .main {
-  margin-left: 220px;
-  flex: 1;
+  margin: 0 auto;
+  max-width: 960px;
   padding: 20px;
   display: flex;
   flex-direction: column;
@@ -95,6 +96,12 @@ body::before {
   width: 100%;
   position: relative;
   z-index: 1;
+}
+
+@media (min-width: 768px) {
+  .main {
+    padding-left: 240px; /* Отступ от меню */
+  }
 }
 
 header {
@@ -156,7 +163,7 @@ header h1 {
   position: absolute;
   inset: 0;
   font-family: inherit;
-  background: rgba(0, 0, 0, 0.3); /* прозрачный полупрозрачный фон */
+  background: rgba(0, 0, 0, 0.3);
   color: #fff;
   font-size: 2rem;
   font-weight: 700;
@@ -169,7 +176,6 @@ header h1 {
   transition: background-color 0.25s ease;
   z-index: 2;
   box-shadow: none;
-  /* backdrop-filter: blur(4px); <-- удалено */
 }
 
 .play-button:hover {
@@ -206,6 +212,7 @@ iframe#video-iframe {
   font-size: 1rem;
   color: #ccc;
 }
+
 .menu-icon {
   width: 24px;
   height: 24px;
@@ -214,6 +221,7 @@ iframe#video-iframe {
   border-radius: 4px;
   object-fit: contain;
 }
+
 footer {
   text-align: center;
   font-size: 14px;
@@ -242,8 +250,8 @@ footer {
   }
 
   .main {
-    margin-left: 0;
-    padding-top: 60px;
+    padding-left: 20px;
+    padding-right: 20px;
   }
 
   header h1 {
