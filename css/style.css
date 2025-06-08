@@ -206,7 +206,14 @@ iframe#video-iframe {
   font-size: 1rem;
   color: #ccc;
 }
-
+.menu-icon {
+  width: 24px;
+  height: 24px;
+  margin-right: 8px;
+  vertical-align: middle;
+  border-radius: 4px;
+  object-fit: contain;
+}
 footer {
   text-align: center;
   font-size: 14px;
